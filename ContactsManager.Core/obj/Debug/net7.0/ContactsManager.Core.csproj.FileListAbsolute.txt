@@ -1,0 +1,12 @@
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net7.0\ContactsManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net7.0\ContactsManager.Core.AssemblyInfoInputs.cache
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net7.0\ContactsManager.Core.AssemblyInfo.cs
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net7.0\ContactsManager.Core.csproj.CoreCompileInputs.cache
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\bin\Debug\net7.0\ContactsManager.Core.deps.json
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\bin\Debug\net7.0\ContactsManager.Core.dll
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\bin\Debug\net7.0\ContactsManager.Core.pdb
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net7.0\ContactsManager.Core.csproj.AssemblyReference.cache
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net7.0\ContactsManager.Core.dll
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net7.0\refint\ContactsManager.Core.dll
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net7.0\ContactsManager.Core.pdb
+C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.Core\obj\Debug\net7.0\ref\ContactsManager.Core.dll

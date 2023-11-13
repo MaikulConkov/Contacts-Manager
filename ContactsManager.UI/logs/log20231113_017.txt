@@ -1,0 +1,5 @@
+2023-11-13 14:13:33.390 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-13 14:13:33.400 +03:00 [INF] Hosting environment: Development
+2023-11-13 14:13:33.403 +03:00 [INF] Content root path: C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.UI
+2023-11-13 14:31:15.287 +03:00 [INF] User profile is available. Using 'C:\Users\maiki\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-13 14:31:15.372 +03:00 [INF] Now listening on: http://localhost:5204

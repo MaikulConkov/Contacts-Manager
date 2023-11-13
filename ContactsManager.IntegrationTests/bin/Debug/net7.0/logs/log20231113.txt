@@ -1,0 +1,54 @@
+2023-11-13 14:40:24.984 +03:00 [INF] User profile is available. Using 'C:\Users\maiki\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-13 14:40:25.085 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/People/Index - -
+2023-11-13 14:40:25.092 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /People/Index
+Host: localhost
+2023-11-13 14:40:25.124 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.PeopleController.Index (ContactsManager.UI)'
+2023-11-13 14:40:25.140 +03:00 [INF] Route matched with {action = "Index", controller = "People", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ContactsManager.Core.Enums.SortOrderEnum) on controller ContactsManager.UI.Controllers.PeopleController (ContactsManager.UI).
+2023-11-13 14:40:25.229 +03:00 [INF] PeopleListActionFilter method OnActionExecuting
+2023-11-13 14:40:25.232 +03:00 [INF] GetFilteredPeople of PeopleService
+2023-11-13 14:40:25.820 +03:00 [INF] Time for Filtered People from Database completed in 587.3 ms
+2023-11-13 14:40:25.824 +03:00 [INF] GetSortedPeople of PeopleService
+2023-11-13 14:40:25.825 +03:00 [INF] PeopleListActionFilter method OnActionExecuted
+2023-11-13 14:40:25.858 +03:00 [INF] Executing ViewResult, running view Index.
+2023-11-13 14:40:25.973 +03:00 [INF] Executed ViewResult - view Index executed in 115.744ms.
+2023-11-13 14:40:25.973 +03:00 [INF] Executed action ContactsManager.UI.Controllers.PeopleController.Index (ContactsManager.UI) in 832.3047ms
+2023-11-13 14:40:25.973 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.PeopleController.Index (ContactsManager.UI)'
+2023-11-13 14:40:25.974 +03:00 [INF] Response:
+StatusCode: 200
+My-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+my-key: [Redacted]
+Content-Type: text/html; charset=utf-8
+2023-11-13 14:40:25.978 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/People/Index - - - 200 - text/html;+charset=utf-8 895.3588ms
+2023-11-13 14:41:02.214 +03:00 [INF] User profile is available. Using 'C:\Users\maiki\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-13 14:41:02.294 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/People/Index - -
+2023-11-13 14:41:02.301 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /People/Index
+Host: localhost
+2023-11-13 14:41:02.338 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.PeopleController.Index (ContactsManager.UI)'
+2023-11-13 14:41:02.355 +03:00 [INF] Route matched with {action = "Index", controller = "People", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ContactsManager.Core.Enums.SortOrderEnum) on controller ContactsManager.UI.Controllers.PeopleController (ContactsManager.UI).
+2023-11-13 14:41:02.438 +03:00 [INF] PeopleListActionFilter method OnActionExecuting
+2023-11-13 14:41:02.441 +03:00 [INF] GetFilteredPeople of PeopleService
+2023-11-13 14:41:03.012 +03:00 [INF] Time for Filtered People from Database completed in 570.2 ms
+2023-11-13 14:41:03.016 +03:00 [INF] GetSortedPeople of PeopleService
+2023-11-13 14:41:03.018 +03:00 [INF] PeopleListActionFilter method OnActionExecuted
+2023-11-13 14:41:03.049 +03:00 [INF] Executing ViewResult, running view Index.
+2023-11-13 14:41:03.170 +03:00 [INF] Executed ViewResult - view Index executed in 120.5897ms.
+2023-11-13 14:41:03.171 +03:00 [INF] Executed action ContactsManager.UI.Controllers.PeopleController.Index (ContactsManager.UI) in 815.5135ms
+2023-11-13 14:41:03.171 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.PeopleController.Index (ContactsManager.UI)'
+2023-11-13 14:41:03.171 +03:00 [INF] Response:
+StatusCode: 200
+My-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+my-key: [Redacted]
+Content-Type: text/html; charset=utf-8
+2023-11-13 14:41:03.176 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/People/Index - - - 200 - text/html;+charset=utf-8 884.5742ms

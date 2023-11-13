@@ -1,0 +1,56 @@
+2023-11-13 00:33:43.270 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-13 00:33:43.280 +03:00 [INF] Hosting environment: Development
+2023-11-13 00:33:43.282 +03:00 [INF] Content root path: C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.UI
+2023-11-13 00:36:29.870 +03:00 [INF] User profile is available. Using 'C:\Users\maiki\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-13 00:36:29.965 +03:00 [INF] Now listening on: http://localhost:5204
+2023-11-13 00:36:30.643 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/ - -
+2023-11-13 00:36:30.679 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5204
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-11-13 00:36:30.731 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI)'
+2023-11-13 00:36:30.773 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ContactsManager.Core.Enums.SortOrderEnum) on controller ContactsManager.UI.Controllers.PersonsController (ContactsManager.UI).
+2023-11-13 00:36:30.963 +03:00 [INF] PersonsListActionFilter method OnActionExecuting
+2023-11-13 00:36:30.970 +03:00 [INF] GetFilteredPersons of PersonsService
+2023-11-13 00:36:31.956 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [People] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-11-13 00:36:32.040 +03:00 [INF] Time for Filtered Persons from Database completed in 1067.9 ms
+2023-11-13 00:36:32.047 +03:00 [INF] GetSortedPersons of PersonsService
+2023-11-13 00:36:32.051 +03:00 [INF] PersonsListActionFilter method OnActionExecuted
+2023-11-13 00:36:32.087 +03:00 [INF] Executing ViewResult, running view Index.
+2023-11-13 00:36:32.273 +03:00 [INF] Executed ViewResult - view Index executed in 187.6205ms.
+2023-11-13 00:36:32.277 +03:00 [INF] Executed action ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI) in 1501.7368ms
+2023-11-13 00:36:32.279 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI)'
+2023-11-13 00:36:32.281 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 12 Nov 2023 21:36:31 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+my-key: [Redacted]
+2023-11-13 00:36:32.298 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/ - - - 200 - text/html;+charset=utf-8 1658.0108ms
+2023-11-13 00:36:32.603 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_vs/browserLink - -
+2023-11-13 00:36:32.605 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 00:36:32.608 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 3.0398ms
+2023-11-13 00:36:32.629 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.0018ms

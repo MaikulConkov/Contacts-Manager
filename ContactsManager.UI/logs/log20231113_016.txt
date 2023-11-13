@@ -1,0 +1,149 @@
+2023-11-13 14:09:56.933 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-13 14:09:56.943 +03:00 [INF] Hosting environment: Development
+2023-11-13 14:09:56.945 +03:00 [INF] Content root path: C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.UI
+2023-11-13 14:13:33.299 +03:00 [INF] User profile is available. Using 'C:\Users\maiki\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-13 14:13:33.387 +03:00 [INF] Now listening on: http://localhost:5204
+2023-11-13 14:13:33.633 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/Persons/Index - -
+2023-11-13 14:13:33.658 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5204
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-11-13 14:13:33.850 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI)'
+2023-11-13 14:13:33.880 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ContactsManager.Core.Enums.SortOrderEnum) on controller ContactsManager.UI.Controllers.PersonsController (ContactsManager.UI).
+2023-11-13 14:13:33.901 +03:00 [INF] PersonsListActionFilter method OnActionExecuting
+2023-11-13 14:13:33.908 +03:00 [INF] GetFilteredPersons of PersonsService
+2023-11-13 14:13:34.918 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [People] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-11-13 14:13:35.012 +03:00 [INF] Time for Filtered Persons from Database completed in 1102.0 ms
+2023-11-13 14:13:35.018 +03:00 [INF] GetSortedPersons of PersonsService
+2023-11-13 14:13:35.022 +03:00 [INF] PersonsListActionFilter method OnActionExecuted
+2023-11-13 14:13:35.053 +03:00 [INF] Executing ViewResult, running view Index.
+2023-11-13 14:13:35.241 +03:00 [INF] Executed ViewResult - view Index executed in 185.1927ms.
+2023-11-13 14:13:35.246 +03:00 [INF] Executed action ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI) in 1362.9489ms
+2023-11-13 14:13:35.249 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI)'
+2023-11-13 14:13:35.252 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 13 Nov 2023 11:13:34 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+my-key: [Redacted]
+2023-11-13 14:13:35.281 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/Persons/Index - - - 200 - text/html;+charset=utf-8 1650.9585ms
+2023-11-13 14:13:35.369 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_vs/browserLink - -
+2023-11-13 14:13:35.371 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 14:13:35.375 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 3.3602ms
+2023-11-13 14:13:35.387 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.7378ms
+2023-11-13 14:13:41.022 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/Account/Logout - -
+2023-11-13 14:13:41.024 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Logout
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5204
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-11-13 14:13:41.033 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager.UI)'
+2023-11-13 14:13:41.038 +03:00 [INF] Route matched with {action = "Logout", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2023-11-13 14:13:41.046 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-11-13 14:13:41.049 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2023-11-13 14:13:41.050 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-11-13 14:13:41.052 +03:00 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2023-11-13 14:13:41.054 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager.UI) in 12.913ms
+2023-11-13 14:13:41.055 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Logout (ContactsManager.UI)'
+2023-11-13 14:13:41.056 +03:00 [INF] Response:
+StatusCode: 302
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: /Persons/Index
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+My-Key-From-Global: [Redacted]
+2023-11-13 14:13:41.058 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/Account/Logout - - - 302 0 - 35.8600ms
+2023-11-13 14:13:41.061 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/Persons/Index - -
+2023-11-13 14:13:41.062 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5204
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+2023-11-13 14:13:41.067 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI)'
+2023-11-13 14:13:41.068 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ContactsManager.Core.Enums.SortOrderEnum) on controller ContactsManager.UI.Controllers.PersonsController (ContactsManager.UI).
+2023-11-13 14:13:41.072 +03:00 [INF] PersonsListActionFilter method OnActionExecuting
+2023-11-13 14:13:41.073 +03:00 [INF] GetFilteredPersons of PersonsService
+2023-11-13 14:13:41.093 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [People] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-11-13 14:13:41.097 +03:00 [INF] Time for Filtered Persons from Database completed in 23.6 ms
+2023-11-13 14:13:41.098 +03:00 [INF] GetSortedPersons of PersonsService
+2023-11-13 14:13:41.099 +03:00 [INF] PersonsListActionFilter method OnActionExecuted
+2023-11-13 14:13:41.100 +03:00 [INF] Executing ViewResult, running view Index.
+2023-11-13 14:13:41.108 +03:00 [INF] Executed ViewResult - view Index executed in 8.2225ms.
+2023-11-13 14:13:41.109 +03:00 [INF] Executed action ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI) in 39.9932ms
+2023-11-13 14:13:41.111 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI)'
+2023-11-13 14:13:41.112 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 13 Nov 2023 11:13:40 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+my-key: [Redacted]
+2023-11-13 14:13:41.115 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/Persons/Index - - - 200 - text/html;+charset=utf-8 53.9720ms
+2023-11-13 14:13:41.148 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 14:13:41.150 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 2.2686ms
+2023-11-13 14:13:41.209 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_vs/browserLink - -
+2023-11-13 14:13:41.213 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.1154ms

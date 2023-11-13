@@ -1,0 +1,247 @@
+2023-11-13 13:28:37.469 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-13 13:28:37.479 +03:00 [INF] Hosting environment: Development
+2023-11-13 13:28:37.481 +03:00 [INF] Content root path: C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.UI
+2023-11-13 13:42:59.075 +03:00 [INF] User profile is available. Using 'C:\Users\maiki\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-13 13:42:59.155 +03:00 [INF] Now listening on: http://localhost:5204
+2023-11-13 13:42:59.221 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/Persons/Index - -
+2023-11-13 13:42:59.240 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5204
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-11-13 13:42:59.389 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI)'
+2023-11-13 13:42:59.413 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ContactsManager.Core.Enums.SortOrderEnum) on controller ContactsManager.UI.Controllers.PersonsController (ContactsManager.UI).
+2023-11-13 13:42:59.433 +03:00 [INF] PersonsListActionFilter method OnActionExecuting
+2023-11-13 13:42:59.436 +03:00 [INF] GetFilteredPersons of PersonsService
+2023-11-13 13:43:00.406 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [People] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-11-13 13:43:00.511 +03:00 [INF] Time for Filtered Persons from Database completed in 1073.5 ms
+2023-11-13 13:43:00.518 +03:00 [INF] GetSortedPersons of PersonsService
+2023-11-13 13:43:00.523 +03:00 [INF] PersonsListActionFilter method OnActionExecuted
+2023-11-13 13:43:00.562 +03:00 [INF] Executing ViewResult, running view Index.
+2023-11-13 13:43:00.734 +03:00 [INF] Executed ViewResult - view Index executed in 172.7035ms.
+2023-11-13 13:43:00.739 +03:00 [INF] Executed action ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI) in 1323.0103ms
+2023-11-13 13:43:00.742 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI)'
+2023-11-13 13:43:00.746 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 13 Nov 2023 10:43:00 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+my-key: [Redacted]
+2023-11-13 13:43:00.763 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/Stylesheet.css - -
+2023-11-13 13:43:00.765 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Stylesheet.css
+Accept: text/css,*/*;q=0.1
+Connection: keep-alive
+Host: localhost:5204
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-11-13 13:43:00.771 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/Persons/Index - - - 200 - text/html;+charset=utf-8 1552.4636ms
+2023-11-13 13:43:00.775 +03:00 [INF] Sending file. Request path: '/Stylesheet.css'. Physical path: 'C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.UI\wwwroot\StyleSheet.css'
+2023-11-13 13:43:00.777 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Mon, 13 Nov 2023 10:43:00 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 24 Oct 2023 07:17:48 GMT
+Content-Length: 10279
+2023-11-13 13:43:00.778 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/Stylesheet.css - - - 200 10279 text/css 14.5233ms
+2023-11-13 13:43:00.855 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 13:43:00.855 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_vs/browserLink - -
+2023-11-13 13:43:00.858 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 2.7188ms
+2023-11-13 13:43:00.866 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.8321ms
+2023-11-13 13:43:00.945 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/favicon.ico - -
+2023-11-13 13:43:00.946 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5204
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-11-13 13:43:00.957 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.UI\wwwroot\favicon.ico'
+2023-11-13 13:43:00.959 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: image/x-icon
+Date: Mon, 13 Nov 2023 10:43:00 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Wed, 08 Nov 2023 08:41:32 GMT
+Content-Length: 5430
+2023-11-13 13:43:00.960 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/favicon.ico - - - 200 5430 image/x-icon 15.2979ms
+2023-11-13 13:43:05.813 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/Persons/Index - -
+2023-11-13 13:43:05.815 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5204
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-11-13 13:43:05.824 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI)'
+2023-11-13 13:43:05.825 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ContactsManager.Core.Enums.SortOrderEnum) on controller ContactsManager.UI.Controllers.PersonsController (ContactsManager.UI).
+2023-11-13 13:43:05.830 +03:00 [INF] PersonsListActionFilter method OnActionExecuting
+2023-11-13 13:43:05.831 +03:00 [INF] GetFilteredPersons of PersonsService
+2023-11-13 13:43:05.843 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [People] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2023-11-13 13:43:05.847 +03:00 [INF] Time for Filtered Persons from Database completed in 16.0 ms
+2023-11-13 13:43:05.848 +03:00 [INF] GetSortedPersons of PersonsService
+2023-11-13 13:43:05.849 +03:00 [INF] PersonsListActionFilter method OnActionExecuted
+2023-11-13 13:43:05.850 +03:00 [INF] Executing ViewResult, running view Index.
+2023-11-13 13:43:05.858 +03:00 [INF] Executed ViewResult - view Index executed in 8.0878ms.
+2023-11-13 13:43:05.860 +03:00 [INF] Executed action ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI) in 31.9921ms
+2023-11-13 13:43:05.862 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.PersonsController.Index (ContactsManager.UI)'
+2023-11-13 13:43:05.863 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 13 Nov 2023 10:43:05 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+my-key: [Redacted]
+2023-11-13 13:43:05.866 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/Persons/Index - - - 200 - text/html;+charset=utf-8 53.0016ms
+2023-11-13 13:43:05.896 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 13:43:05.897 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 1.3159ms
+2023-11-13 13:43:05.948 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_vs/browserLink - -
+2023-11-13 13:43:05.955 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.0998ms
+2023-11-13 13:43:07.395 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/admin/home/index - -
+2023-11-13 13:43:07.396 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /admin/home/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5204
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-11-13 13:43:07.410 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Areas.Admin.Controllers.HomeController.Index (ContactsManager.UI)'
+2023-11-13 13:43:07.413 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ContactsManager.UI.Areas.Admin.Controllers.HomeController (ContactsManager.UI).
+2023-11-13 13:43:07.415 +03:00 [INF] Executing ViewResult, running view Index.
+2023-11-13 13:43:07.422 +03:00 [INF] Executed ViewResult - view Index executed in 7.0764ms.
+2023-11-13 13:43:07.424 +03:00 [INF] Executed action ContactsManager.UI.Areas.Admin.Controllers.HomeController.Index (ContactsManager.UI) in 9.6202ms
+2023-11-13 13:43:07.426 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Areas.Admin.Controllers.HomeController.Index (ContactsManager.UI)'
+2023-11-13 13:43:07.427 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 13 Nov 2023 10:43:07 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2023-11-13 13:43:07.428 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/admin/home/index - - - 200 - text/html;+charset=utf-8 33.7571ms
+2023-11-13 13:43:07.458 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/AdminStyles.css - -
+2023-11-13 13:43:07.458 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 13:43:07.458 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5204/_vs/browserLink - -
+2023-11-13 13:43:07.459 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /AdminStyles.css
+Accept: text/css,*/*;q=0.1
+Connection: keep-alive
+Host: localhost:5204
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2023-11-13 13:43:07.461 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_framework/aspnetcore-browser-refresh.js - - - 200 12368 application/javascript;+charset=utf-8 3.4666ms
+2023-11-13 13:43:07.465 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.7111ms
+2023-11-13 13:43:07.477 +03:00 [INF] Sending file. Request path: '/AdminStyles.css'. Physical path: 'C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.UI\wwwroot\AdminStyles.css'
+2023-11-13 13:43:07.478 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Mon, 13 Nov 2023 10:43:07 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Mon, 13 Nov 2023 10:42:53 GMT
+Content-Length: 1418
+2023-11-13 13:43:07.479 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5204/AdminStyles.css - - - 200 1418 text/css 21.5786ms
