@@ -31,6 +31,7 @@ namespace ContactsManager.Core.Services
             {
                 throw new ArgumentNullException(nameof(personID));
             }
+
             Person? person = await _peopleRepository.GetPersonByPersonID(personID.Value);
             if (person == null)
                 return false;

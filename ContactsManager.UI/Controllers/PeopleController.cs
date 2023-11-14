@@ -2,8 +2,8 @@
 using ContactsManager.Core.DTO.PersonDTO;
 using ContactsManager.Core.Enums;
 using ContactsManager.Core.ServiceContracts;
+using ContactsManager.Core.Services;
 using ContactsManager.UI.Filters.ActionFilters;
-using ContactsManager.UI.Filters.AuthorizationFilter;
 using ContactsManager.UI.Filters.ExceptionFilteres;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -102,7 +102,6 @@ namespace ContactsManager.UI.Controllers
         [HttpPost]
         [Route("[action]/{personID}")]
         [TypeFilter(typeof(PersonCreateAndPostActionFilter))]
-        [TypeFilter(typeof(TokenAuthorizationFilter))]
         public async Task<IActionResult> Edit(PersonUpdateRequest personRequest)
         {
             PersonResponse? personResponse = await _personGetterService.GetPersonByPersonID(personRequest.PersonID);
@@ -134,7 +133,7 @@ namespace ContactsManager.UI.Controllers
             if (personResponse == null)
                 return RedirectToAction("Index");
 
-            _personDeleteService.DeletePerson(personUpdateResult.PersonID);
+            await _personDeleteService.DeletePerson(personUpdateResult.PersonID);
             return RedirectToAction("Index");
         }
 

@@ -1,3 +1,0 @@
-2023-11-12 20:18:02.269 +03:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-11-12 20:18:02.280 +03:00 [INF] Hosting environment: Development
-2023-11-12 20:18:02.282 +03:00 [INF] Content root path: C:\.Net everything to start a job\.Net\FinalProject\ContactsManagerSolution\ContactsManager.UI
